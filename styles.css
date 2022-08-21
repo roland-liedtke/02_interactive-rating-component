@@ -137,13 +137,13 @@ main {
   cursor: pointer;
 }
 
-.card .star:active {
-  background-color: var(--neutral-light-gray);
+.card .star:hover {
+  background-color: var(--primary-orange);
   color: var(--neutral-white);
 }
 
-.card .star:hover {
-  background-color: var(--primary-orange);
+.card .star:active {
+  background-color: var(--neutral-medium-gray);
   color: var(--neutral-white);
 }
 
