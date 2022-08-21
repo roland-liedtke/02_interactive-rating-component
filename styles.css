@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --primary-orange: hsl(25, 97%, 53%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-light-gray: hsl(217, 12%, 63%);
+  --neutral-medium-gray: hsl(216, 12%, 54%);
+  --neutral-dark-blue: hsl(213, 19%, 18%);
+  --neutral-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Overpass', sans-serif;
+  background-color: #141519;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    margin: 25px;
+  }
+}
+.card {
+  background: linear-gradient(#1f2630, #171e28);
+  border-radius: 15px;
+  padding: 25px;
+  width: 300px;
+  margin: auto;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 100%;
+    border-radius: 15px;
+    padding: 25px 25px 30px;
+  }
+}
+
+.before {
+  display: none;
+}
+
+.card .logo {
+  display: block;
+  width: 120px;
+  margin: 5px auto 10px;
+}
+
+.card .star-icon {
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #262e38;
+  width: 40px;
+}
+
+@media screen and (max-width: 375px) {
+  .card .star-icon {
+    padding: 12px;
+  }
+}
+
+.card .selected {
+  text-align: center;
+  font-size: 12px;
+  background-color: #262e38;
+  border-radius: 20px;
+  color: var(--primary-orange);
+  padding: 5px;
+  margin: 20px 50px;
+}
+
+.card .title {
+  color: var(--neutral-white);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.card .title2 {
+  color: var(--neutral-white);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: -5px;
+}
+
+@media screen and (max-width: 375px) {
+  .card .title {
+    font-size: 24px;
+  }
+}
+
+.card .paragraph {
+  color: var(--neutral-medium-gray);
+  line-height: 18px;
+  font-size: 11px;
+}
+
+.card .paragraph2 {
+  color: var(--neutral-medium-gray);
+  line-height: 18px;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  .card .paragraph {
+    line-height: 20px;
+    font-size: 14px;
+  }
+}
+
+.card .five-stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.card .star {
+  border-radius: 50%;
+  background-color: #262e38;
+  padding: 10px 15px;
+  color: var(--neutral-light-gray);
+  cursor: pointer;
+}
+
+.card .star:active {
+  background-color: var(--neutral-light-gray);
+  color: var(--neutral-white);
+}
+
+.card .star:hover {
+  background-color: var(--primary-orange);
+  color: var(--neutral-white);
+}
+
+.card button {
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: var(--primary-orange);
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  color: var(--neutral-white);
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 375px) {
+  .card button {
+    padding: 15px;
+  }
+}
+
+.card button:hover, .card button:active {
+  background-color: var(--neutral-white);
+  color: var(--primary-orange);
+  font-weight: 500;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--neutral-light-gray);
+}
+
+.attribution a {
+  color: var(--neutral-medium-gray);
+}

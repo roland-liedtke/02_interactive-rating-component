@@ -28,6 +28,8 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
+JS HTML DOM
+ES5 2009
 
 ### Screenshot
 
